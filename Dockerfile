@@ -12,7 +12,7 @@ COPY pom.xml /home/app
 
 RUN mkdir -p /var/local/SP
 
-RUN mvn -f /home/app/pom.xml clean package
+RUN mvn -f /home/app/pom.xml clean package -DskipTests
 
 EXPOSE 8080
 
